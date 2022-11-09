@@ -28,7 +28,7 @@ print('Hovering')
 time.sleep(10)
 print("preparing to decend")
 vehicle.mode=VehicleMode("RTL")
-print(vehicle.location.global_relative_frame.alt)
+#print(vehicle.location.global_relative_frame.alt)
 while vehicle.location.global_relative_frame.alt>=0.5:
     print("landing...", vehicle.location.global_relative_frame.alt)
     time.sleep(1)
